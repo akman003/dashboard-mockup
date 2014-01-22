@@ -6,12 +6,26 @@ a:focus,
 a:hover,
 a:visited{color:#563D7C}
 a .caret{border-color: #563D7C rgba(0, 0, 0, 0) -moz-use-text-color;}
-body>div#content{background-color:#fff;}
+body>div#content{background-color:#e5e2dd;}
 header.navbar,
 footer.navbar{
 	border-radius:0;
 	margin-bottom:0;	
 }
+
+/*dev*/
+
+header.navbar.navbar-inverse{
+	background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,#563d7c), color-stop(100%,#463265));  
+    background: -webkit-linear-gradient(top,  #333333 31%,#000000 100%);  
+    background: -moz-linear-gradient(top,  #333333 31%, #000000 100%);  
+    background: -o-linear-gradient(top, #333333 31%,#000000 100%);  
+    background: -ms-linear-gradient(top, #333333 31%,#000000 100%);  
+    background: linear-gradient(to bottombottom,  #333333 31%,#000000 100%);  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 );
+}
+
+/*dev*/
 
 header a.navbar-brand{
 	color:#563d7c !important;
@@ -23,11 +37,11 @@ nav.navbar{border-radius:0; font-size:.8em; min-height:0; margin-bottom:0;}
 	background-color: #563d7c !important;
 	border-color: #463265 !important;
 	box-shadow: 0 1px 0 rgba(255,255,255,.1) !important;
-	color:#fff;
+	color:#333333;
 	
 	background: #563d7c;  
     background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,#563d7c), color-stop(100%,#463265));  
-    background: -webkit-linear-gradient(top,  #563d7c 31%,#463265 100%);  
+    background: -webkit-linear-gradient(top,  #fc1 31%,#fc4 100%);  
     background: -moz-linear-gradient(top,  #563d7c 31%, #463265 100%);  
     background: -o-linear-gradient(top, #563d7c 31%,#463265 100%);  
     background: -ms-linear-gradient(top, #563d7c 31%,#463265 100%);  
