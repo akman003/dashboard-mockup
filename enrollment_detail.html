@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Layout</title>
+	<link rel="stylesheet" type="text/css" href="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/css/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>	
+	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/jquery/2.0.3/jquery.min.js"></script>
+	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/typeahead/0.9.3/typeahead.js"></script>	
+</head>
+<body>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body" id="myModaltext">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal" id="myModalCancel">Close</button>
+	        <button type="button" class="btn btn-primary" id="myModalSave">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<header class="navbar navbar-inverse" role="banner">
+	    <div class="pull-right">
+			<div class="collapse navbar-collapse ">
+				<ul class="nav navbar-nav ">
+					<li><a href="#">STAFF</a></li>
+					<li><a href="#">FACULTY</a></li>
+					<li class="active"><a href="#reg">STUDENT</a></li>
+					
+					<li><a href="#">SIGN OUT</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">GoPURPLE</a>
+		</div>
+	</header>
+
+	<nav class="navbar brand-back">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ENROLLMENT<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Enrollment Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Course Catalogs</a></li>
+			          <li><a href="#">Search for Classes</a></li>			          
+			          <li><a href="#">Enrollment Verification</a></li>			          
+			          <li><a href="#">Enroll</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ACADEMICS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Academic Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Degree Audit</a></li>
+			          <li><a href="#">Request Transcript</a></li>			          
+			          <li><a href="#">Transfer Credit Report</a></li>
+			          <li><a href="#">Apply for Graduation</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">STUDENT ACCOUNTS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Account Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">View Account</a></li>
+			          <li><a href="#">IRS Form 1098T</a></li>			          
+			          <li><a href="#">Direct Deposit(refunds)</a></li>			          
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">FINANCIAL AID<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Aid Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">View Financial Aid</a></li>
+			          <li><a href="#">Summer Financial Aid</a></li>			          
+			          <li><a href="#">Accept/Decline Awards</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ADMISSIONS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Admissions Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Application Status</a></li>
+			          <li><a href="#">To Do</a></li>			         
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">PROFILE<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Profile Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Addresses</a></li>
+			          <li><a href="#">Email Addresses</a></li>			          
+			          <li><a href="#">Phone Numbers</a></li>
+			          <li><a href="#">Emergency Contacts</a></li>
+			          <li><a href="#">Immunizations</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">CAMPUS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Campus Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Campus Bookstore</a></li>
+			          <li><a href="#">Campus Housing</a></li>			          
+			          <li><a href="#">Police and Parking</a></li>
+			      	</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div id="content">
+		<div class="row">
+			<div class="col-xs-8">
+				<h2 class="page-title">Enrollment Details&#160;-&#160;<span class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><em>Spring 2014</em>&#160;<span class="caret caret-lg"></span></a><ul class="dropdown-menu"><li class="active"><a href="#">Fall 2013</a></li><li><a href="#">Spring 2014</a></li><li><a href="#">Summer 2014</a></li></ul></span></h2>
+				<div class="panel panel-brand" id="getcart">							
+				  	<div class="panel-heading brand-back">
+				  		<div class="pull-right">
+				  			<a href="#" class="btn btn-outline-inverse btn-xs" id="checkout">Proceed to Checkout</a>
+				  		</div>
+				    	<h3 class="panel-title">Shopping Cart</h3>
+				  	</div>			
+				  	<table class="table table-bordered" style="margin-bottom:0;">									
+						<tr class="headings">
+							<th id="class_nbr">Class Nbr.</th>
+							<th id="course">Course</th>
+							<th id="title">Title</th>
+							<th id="days">Days</th>
+							<th id="time">Time</th>
+							<th id="location">Location</th>
+							<th id="status">Status</th>
+						</tr>	
+					</table>
+					
+					<div class="input-group text-left" >  	
+					  	<input type="text" placeholder="Quick Load by class number, course, or title" title="Quick Load by Class Number" class="form-control" id="class-find" style="border-top-left-radius:0;"/>
+						<div class="input-group-btn">
+							<a class="btn btn-default" href="#">Search</a>
+							<a data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#" style="border-top-right-radius:0;">
+								<span class="caret"></span>
+								<span class="sr-only">Toggle Dropdown</span>
+							</a>
+							<ul role="menu" class="dropdown-menu pull-right">
+								<li><a href="browse.html">Browse Schedule</a></li>
+								<li><a href="advance_search.html">Search Classes</a></li>
+								<li><a href="build.html">Schedule Builder</a></li>
+							</ul>
+						</div>
+				  	</div>	
+				  	
+				</div>
+				
+				<div class="panel panel-brand">							
+				  	<div class="panel-heading brand-back">
+				  		<div class="pull-right">
+				  			<a href="#" class="btn btn-outline-inverse btn-xs">Print</a>
+				  		</div>
+				    	<h3 class="panel-title">Enrolled Classes</h3>
+				  	</div>
+				  	<div id="getenroll">
+						<table class="table table-bordered" style="margin-bottom:0;">
+							<tr class="headings">
+								<th id="class_nbr">Class Nbr.</th>
+								<th id="course">Course</th>
+								<th id="title">Title</th>
+								<th id="days">Days</th>
+								<th id="time">Time</th>
+								<th id="location">Location</th>
+								
+							</tr>
+						</table>
+					</div>
+				  	<div class="panel-body text-right" >
+				    	<strong>Total Credit Hours:&#160;</strong><span id="hours">0</span>
+				  	</div>
+				</div>
+				
+				<div class="panel panel-brand">							
+				  	<div class="panel-heading brand-back">
+				  		<div class="pull-right">
+				  			<!-- <a href="#" class="btn btn-outline-inverse btn-xs"></a>-->
+				  		</div>
+				    	<h3 class="panel-title">Dropped Classes</h3>
+				  	</div>
+				  	<div id="getdrop">
+						<table class="table table-bordered">
+							<tr class="headings">
+								<th id="class_nbr">Class Nbr.</th>
+								<th id="course">Course</th>
+								<th id="title">Title</th>
+								<th id="days">Days</th>
+								<th id="time">Time</th>
+								<th id="location">Location</th>
+								<th id="refund">Refund</th>				
+							</tr>			
+						</table>
+					</div>
+				  	<div class="panel-body" >
+				    	Withrawling from a course does not mean that you will not be responsible for paying for it or that it will not appear on your transcript or affect your GPA.  Please review the applicable polices and published deadlines in determining whether it is in your best interest in dropping a class.				    
+				  	</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-4">
+			
+				<div class="panel-group right-col" id="accordion">
+					<ul class="list-group">
+						<li class="list-group-item">	
+									
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						          Enrollment Messages
+						        </a>
+						      </h4>
+						    </div>			    
+						    <div id="collapseOne" class="panel-collapse collapse in">						    							   
+						    	<ul class="list-group">
+								  	<li class="list-group-item alert-danger"><strong>Hold</strong> Before completing your registration you must meet with your advisor</li>
+								    <!-- <li class="list-group-item alert-warning"><strong>ToDo</strong> You have a task that needs to be completed.</li>-->
+								    <li class="list-group-item alert-success"><strong>Action</strong> Your enrollment appointment begins October, 15th at 08:00AM</li>
+								    <!-- <li class="list-group-item alert-info"><strong>Information</strong> Information you need to know.</li>-->    
+			  					</ul>	
+						    </div>
+						  </div>
+						  
+					</li>
+					<li class="list-group-item">	
+								  
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					          Calendar View
+					        </a>
+					      </h4>
+					    </div>
+					    <div id="collapseTwo" class="panel-collapse  collapse ">
+					    	<img src="img/bubbles.png" style="display:block; width:100%;"/>					      
+					    </div>
+					  </div>
+					  
+					</li>
+					<li class="list-group-item">
+									  
+					  <div class="panel panel-default">
+					    <div class="panel-heading">
+					      <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					          Enrollment Links
+					        </a>
+					      </h4>
+					    </div>				    
+					    <div id="collapseThree" class="panel-collapse collapse">
+					      <div class="panel-body">
+					        <h5>Manage</h5>
+					        <ul style="list-style-type:none;">
+								<li><a href="#" class="mv_menu_links cboxElement">Enroll in Classes</a></li>								
+								<li><a href="#" class="mv_menu_links cboxElement">Drop</a>&nbsp; <a href="#" class="mv_menu_links cboxElement">Edit</a>&nbsp; <a href="#" class="mv_menu_links cboxElement">Swap</a></li>								
+								<li><a href="#" class="mv_menu_links cboxElement">Order Official Transcript</a></li>								
+								<li><a href="#" class="mv_menu_links cboxElement">Student Center</a></li>
+							</ul>
+					        <h5>View</h5>
+					        <ul style="list-style-type:none;">
+								<li><a href="#" class="mv_menu_links cboxElement">Enrollment Dates</a></li>							
+								<li><a href="#" class="mv_menu_links cboxElement">My Classes</a></li>							
+								<li><a href="#" class="mv_menu_links cboxElement">Schedule as Calendar</a></li>							
+								<li><a href="#" class="mv_menu_links cboxElement">Holds</a></li>							
+								<li><a href="#" class="mv_menu_links cboxElement">Shopping Cart</a></li>							
+								<li><a href="#" class="mv_menu_links cboxElement">Class Search</a></li>
+							</ul>
+					      </div>
+					    </div>
+					  </div>
+					  
+					</li>
+				</ul>				  
+			</div>
+	
+			</div>		
+		</div>	
+	</div>
+	<footer class="navbar navbar-inverse" role="footer">
+	
+	</footer>
+	<script src="js/data.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/enrollment_detail.js"></script>
+</body>
+</html>

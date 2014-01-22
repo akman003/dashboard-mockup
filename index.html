@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Layout</title>
+	<link rel="stylesheet" type="text/css" href="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/css/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>	
+	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/jquery/2.0.3/jquery.min.js"></script>
+	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/typeahead/0.9.3/typeahead.js"></script>	
+</head>
+<body>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body" id="myModaltext">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal" id="myModalCancel">Close</button>
+	        <button type="button" class="btn btn-primary" id="myModalSave">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<header class="navbar navbar-inverse" role="banner">
+	    <div class="pull-right">
+			<div class="collapse navbar-collapse ">
+				<ul class="nav navbar-nav ">
+					<li><a href="#">STAFF</a></li>
+					<li><a href="#">FACULTY</a></li>
+					<li class="active"><a href="#reg">STUDENT</a></li>
+					
+					<li><a href="#">SIGN OUT</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">GoPURPLE</a>
+		</div>
+	</header>
+
+	<nav class="navbar brand-back">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ENROLLMENT<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="enrollment_detail.html">Enrollment Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Course Catalogs</a></li>
+			          <li><a href="#">Search for Classes</a></li>			          
+			          <li><a href="#">Enrollment Verification</a></li>			          
+			          <li><a href="#">Enroll</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ACADEMICS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Academic Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Degree Audit</a></li>
+			          <li><a href="#">Request Transcript</a></li>			          
+			          <li><a href="#">Transfer Credit Report</a></li>
+			          <li><a href="#">Apply for Graduation</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">STUDENT ACCOUNTS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Account Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">View Account</a></li>
+			          <li><a href="#">IRS Form 1098T</a></li>			          
+			          <li><a href="#">Direct Deposit(refunds)</a></li>			          
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">FINANCIAL AID<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Aid Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">View Financial Aid</a></li>
+			          <li><a href="#">Summer Financial Aid</a></li>			          
+			          <li><a href="#">Accept/Decline Awards</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ADMISSIONS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Admissions Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Application Status</a></li>
+			          <li><a href="#">To Do</a></li>			         
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">PROFILE<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Profile Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Addresses</a></li>
+			          <li><a href="#">Email Addresses</a></li>			          
+			          <li><a href="#">Phone Numbers</a></li>
+			          <li><a href="#">Emergency Contacts</a></li>
+			          <li><a href="#">Immunizations</a></li>
+			        </ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">CAMPUS<b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Campus Details</a></li>
+			          <li class="divider"></li>
+			          <li><a href="#">Campus Bookstore</a></li>
+			          <li><a href="#">Campus Housing</a></li>			          
+			          <li><a href="#">Police and Parking</a></li>
+			      	</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div id="content">
+		<div class="row">
+			<div class="col-xs-6">
+				<div id="message-center" class="panel panel-brand">
+					<div class="panel-heading brand-back">
+				  		<div class="pull-right">
+				  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+				  		</div>
+					 	<h3 class="panel-title">My Messages</h3>
+					 </div>
+					 <ul class="list-group">
+					  	<li class="list-group-item alert-danger"><strong>Hold</strong> You need to take action before registration.</li>
+					    <li class="list-group-item alert-warning"><strong>ToDo</strong> You have a task that needs to be completed.</li>
+					    <li class="list-group-item alert-success"><strong>Action</strong> Action items ie Enrollment Appointment</li>
+					    <li class="list-group-item alert-info"><strong>Information</strong> Information you need to know.</li>    
+  					</ul>					  
+				</div>
+				
+				<div class="panel panel-brand" id="early-reg" style="display:none;">
+				  	<div class="panel-heading brand-back">
+				  		<div class="pull-right">
+				  			<a href="#" class="btn btn-outline-inverse btn-xs" id="proceed">Register</a>
+				  		</div>
+				    	<h3 class="panel-title">Early Registration  - <em>Spring 2014</em></h3>
+				  	</div>
+				  	<div class="panel-body">
+				    	<h4 class="pull-left heading-float">Instructions</h4>
+				    	<p>
+				    		Use the search options below to fill your enrollment shopping cart today.  You will then be able to complete your registration at the time specified in the My Messages section above.  Undergraduate students are required to meet with their advisor before they can complete their registration.
+				    	</p>
+				  	</div>
+				  	<table class="table" id="cart">				
+						<tr class="headings" style="display:none;">
+							<th id="course">Course</th>
+							<!-- <th id="title">Title</th>-->
+							<th id="days">Days</th>
+							<th id="time">Time</th>
+							<th id="location">Location</th>
+							<th id="">Sel.</th>
+						</tr>
+						<tr id="661" style="display:none;"><td class="alert-success"><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BIOL-105<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Biology I</td>--><td class="alert-success">MWF</td><td class="alert-success">12:20PM-1:10PM</td><td class="alert-success">COPH 142</td><td class="alert-success"><input type="checkbox" checked="checked"/></td></tr>
+						<tr id="335" style="display:none;"><td class="alert-danger"><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SPCH-100<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Fund of Speech Comm</td>--><td class="alert-danger" colspan="4">No available seats</td><!-- MWF</td><td class="alert-danger">12:20PM-1:10PM</td><td class="alert-danger">MC 133</td><td class="alert-danger"><input type="checkbox" readonly="readonly"/></td>--></tr>
+						<tr id="663" style="display:none;"><td class="alert-success"><div class="dropdown"><a href="#" class="dropdonwn-toggle" data-toggle="dropdown">HIST-251<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">American History</td>--><td class="alert-success">TR</td><td class="alert-success">10:60AM-12:15PM</td><td class="alert-success">COPH 142</td><td class="alert-success"><input type="checkbox" checked="checked"/></td></tr>
+						<tr id="191" style="display:none;"><td class="alert-success"><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MKT-300<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Marketing</td>--><td class="alert-success">MWF</td><td class="alert-success">10:10AM-10:60AM</td><td class="alert-success">WSTC E123</td><td class="alert-success"><input type="checkbox" checked="checked"/></td></tr>
+						<tr id="210" style="display:none;"><td class="alert-success"><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACCT-250<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Acct I</td>--><td class="alert-success">TR</td><td class="alert-success">1:60PM-3:15PM</td><td class="alert-success">WSTC E221</td><td class="alert-success"><input type="checkbox" checked="checked"/></td></tr>
+					</table>
+				  	<div class="panel-body text-right">
+				  		<div class="input-group text-left" style="margin-bottom:15px;">
+							<input type="text" placeholder="Quick Load by class number, course, or title" title="Quick Load by Class Number" class="form-control" id="class-find">
+							<div class="input-group-btn">
+								<a class="btn btn-default" href="#">Search</a>
+								<a data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
+									<span class="caret"></span>
+									<span class="sr-only">Toggle Dropdown</span>
+								</a>
+								<ul role="menu" class="dropdown-menu pull-right">
+									<li><a href="browse.html">Browse Schedule</a></li>
+									<li><a href="advance_search.html">Search Classes</a></li>
+									<li><a href="build.html">Schedule Builder</a></li>
+								</ul>
+							</div>
+						</div>
+				    	<strong>Credit Hours:&#160;</strong><span id="hrs">0</span>&#160;&#160;&#160;&#160;
+				  	</div>
+				</div>
+				
+				<div class="panel panel-brand">
+				  	<div class="panel-heading brand-back">
+				  		<div class="pull-right">
+				  			<a href="enrollment_detail.html" class="btn btn-outline-inverse btn-xs">Details</a>
+				  		</div>
+				    	<h3 class="panel-title">My Classes  - <em>Fall 2013</em></h3>
+				  	</div>
+				  	<table class="table">				
+						<tr class="headings">
+							<th id="course">Course</th>
+							<!-- <th id="title">Title</th>-->
+							<th id="days">Days</th>
+							<th id="time">Time</th>
+							<th id="location">Location</th>
+						</tr>
+						<tr id="661"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BIOL-105<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Biology I</td>--><td class="">MWF</td><td class="">12:20PM-1:10PM</td><td class="">COPH 142</td></tr>
+						<tr id="335"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SPCH-100<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Fund of Speech Comm</td>--><td class="">MWF</td><td class="">12:20PM-1:10PM</td><td class="">MC 133</td></tr>
+						<tr id="663"><td class=""><div class="dropdown"><a href="#" class="dropdonwn-toggle" data-toggle="dropdown">HIST-251<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">American History</td>--><td class="">TR</td><td class="">10:60AM-12:15PM</td><td class="">COPH 142</td></tr>
+						<tr id="191"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MKT-300<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Marketing</td>--><td class="">MWF</td><td class="">10:10AM-10:60AM</td><td class="">WSTC E123</td></tr>
+						<tr id="210"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACCT-250<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Acct I</td>--><td class="">TR</td><td class="">1:60PM-3:15PM</td><td class="">WSTC E221</td></tr>
+					</table>
+				  	<div class="panel-body text-right">
+				    	<strong>Credit Hours:&#160;</strong>16&#160;&#160;&#160;&#160;
+				  	</div>
+				</div>
+						
+			</div>
+			<div class="col-xs-6">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="panel panel-brand">							
+						  	<div class="panel-heading brand-back">
+						  		<div class="pull-right">
+						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  		</div>
+						    	<h3 class="panel-title">I Owe</h3>
+						  	</div>
+						  	<div class="panel-body" style="height:97px">
+						    	<button type="button" class="pull-right btn btn-danger btn-lg">Pay</button>
+						    	<span style="font-size:36px">$4,312</span>						    
+						  	</div>
+						</div>										
+					</div>
+					<div class="col-xs-6">
+						<div class="panel panel-brand">
+						  	<div class="panel-heading brand-back">
+						  		<div class="pull-right">
+						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  		</div>
+						    	<h3 class="panel-title">My Aid</h3>
+						  	</div>
+						  	<div class="panel-body">
+						    	<table style="width:100%">
+						    		<tr><th class="text-right" style="padding-right:10px;">Fall</th><td>$1,100</td></tr>
+						    		<tr><th class="text-right" style="padding-right:10px;">Spring</th><td>$1,100</td></tr>
+						    		<tr><th class="text-right" style="padding-right:10px;">Summer</th><td>$540</td></tr></table>
+						  	</div>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="panel panel-brand">
+						  	<div class="panel-heading brand-back">
+						  		<div class="pull-right">
+						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  		</div>
+						    	<h3 class="panel-title">My Profile</h3>
+						  	</div>
+						  	
+						  	<div class="panel-body">
+						    	<img src="img/Profile.png" class="pull-right profile-sm"/>
+						    	<h4>Contact Information</h4>
+						    	<dl class="dl-horizontal">
+						    		<dt>Permenant Address</dt>
+						    		<dd>416 East 26th Street<br/>Apt 122<br/>Rawlins, NE 68847</dd>
+						    		<dt>Campus Email</dt>
+						    		<dd>schultzjj@go.purple.edu</dd>
+						    		<dt>Preferred Phone</dt>
+						    		<dd>555/867-5309</dd>
+						    	</dl>
+						  	</div>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="panel panel-brand">
+						  	<div class="panel-heading brand-back">
+						  		<div class="pull-right">
+						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  		</div>
+						    	<h3 class="panel-title">My Records</h3>
+						  	</div>
+						  	<div class="panel-body">
+						  		<div class="row">
+						  			<div class="col-xs-5">
+								    	<h4>Academics</h4>
+								    	<dl class="dl-horizontal">
+								    		<dt>Standing</dt>
+								    		<dd>Sophmore</dd>
+								    		<dt>GPA</dt>
+								    		<dd>2.933</dd>
+								    	</dl>
+							    	</div>
+							    	<div class="col-xs-7">
+								    	<h4>Advisor</h4>
+								    	<dl class="dl-horizontal">
+								    		<dt>Name</dt>
+								    		<dd>Beckman,Bob a</dd>
+								    		<dt>Email</dt>
+								    		<dd>beckmanb@purple.edu</dd>
+								    	</dl>
+							    	</div>
+							    </div>
+						    	<h4>Program</h4>
+						    	<table class="table"> 
+									<tr>									
+									<!-- <th>Program</th>-->
+									<th>Degree</th>
+									<th>Majors</th>							
+									</tr>
+									<tr>									
+									<!-- <td>Business &amp; Technology</td>-->
+									<td>Bachelor of Science</td>
+									<td>
+									Business Administration<br>
+									Industrial Technology<br>
+									</td>
+									</tr>
+								</table>						  
+						  	</div>
+						</div>
+					</div>
+				</div>	
+								
+			</div>
+		</div>
+	</div>
+	<footer class="navbar navbar-inverse" role="footer">
+	
+	</footer>
+	<script src="js/data.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

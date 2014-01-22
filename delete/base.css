@@ -1,0 +1,30 @@
+body{
+	
+}
+header{
+	
+}
+header img{
+	width:100%;
+}
+body>div{
+	padding:20px 30px;	
+}
+ul{list-style-type:none;}
+footer{
+	
+}
+footer>div{
+	width:80%;
+	margin:20px auto;
+	padding:10px;
+	border:1px solid #000;
+}
+.dropdown-menu span{margin:3px;}
+
+/* CONTENT */
+.map{
+	background: url("../img/map.png") repeat scroll 100% 100% rgba(0, 0, 0, 0);
+    height: 300px;
+    margin: -20px -20px -35px;
+}
