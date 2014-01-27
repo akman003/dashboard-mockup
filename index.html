@@ -31,32 +31,15 @@
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-	
-	<header class="navbar navbar-inverse" role="banner">
-	    <div class="pull-right">
-			<div class="collapse navbar-collapse ">
-				<ul class="nav navbar-nav ">
-					<li><a href="#">STAFF</a></li>
-					<li><a href="#">FACULTY</a></li>
-					<li class="active"><a href="#reg">STUDENT</a></li>
-					
-					<li><a href="#">SIGN OUT</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="navbar-header">
-			
-				<a href="#" class="navbar-brand"><img src="img/wsc_headerLogo.png" height="60" width="60"/></a>
-			
-		</div>
-	</header>
 
-	<nav class="navbar brand-back">
+	<nav class="navbar brand-back navbar-fixed-top">
 		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="index.html">HOME</a></li>
+			
+			<ul class="nav nav-pills">
+				<div class="pull-left headerlogo"><img src="img/wsc_headerLogo.png" height="38" width="38"/></div>
+				<li class="active"><a id="home" href="index.html">Home</a></li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ENROLLMENT<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Enrollment<b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="enrollment_detail.html">Enrollment Details</a></li>
 			          <li class="divider"></li>
@@ -67,7 +50,7 @@
 			        </ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ACADEMICS<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics<b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Academic Details</a></li>
 			          <li class="divider"></li>
@@ -78,7 +61,7 @@
 			        </ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">STUDENT ACCOUNTS<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Accounts<b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Account Details</a></li>
 			          <li class="divider"></li>
@@ -88,7 +71,7 @@
 			        </ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">FINANCIAL AID<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Aid<b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Aid Details</a></li>
 			          <li class="divider"></li>
@@ -98,7 +81,7 @@
 			        </ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">ADMISSIONS<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions<b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Admissions Details</a></li>
 			          <li class="divider"></li>
@@ -107,7 +90,7 @@
 			        </ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">PROFILE<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile<b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Profile Details</a></li>
 			          <li class="divider"></li>
@@ -119,7 +102,7 @@
 			        </ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">CAMPUS<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Campus<b class="caret"></b></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="#">Campus Details</a></li>
 			          <li class="divider"></li>
@@ -132,24 +115,67 @@
 		</div>
 	</nav>
 
+	<header class="navbar navbar-inverse" role="banner">
+	    <div class="pull-right">
+			<div class="collapse navbar-collapse ">
+				<ul class="nav navbar-nav ">
+					<li><a href="#">STAFF</a></li>
+					<li><a href="#">FACULTY</a></li>
+					<li class="active"><a href="#">STUDENT</a></li>
+					
+					<li><a href="#">SIGN OUT</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar-header">			
+			<!-- TODO: Put some sort of wildcatsOnline logo/image here -->
+		</div>
+	</header>
+
 	<div id="content">
 		<div class="row">
 			<div class="col-xs-6">
-				<div id="message-center" class="panel panel-brand">
-					<div class="panel-heading brand-back">
+				
+				<div class="panel panel-brand">
+				  	<div class="panel-heading brand-back">
 				  		<div class="pull-right">
-				  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+				  			<i class="fa fa-pencil fa-lg"></i>
 				  		</div>
-					 	<h3 class="panel-title">
-					 		<i class="fa fa-envelope"></i> Messages
-					 	</h3>
-					 </div>
-					 <ul class="list-group">
-					  	<li class="list-group-item alert-danger"><strong>Hold</strong> You need to take action before registration.</li>
-					    <li class="list-group-item alert-warning"><strong>ToDo</strong> You have a task that needs to be completed.</li>
-					    <li class="list-group-item alert-success"><strong>Action</strong> Action items ie Enrollment Appointment</li>
-					    <li class="list-group-item alert-info"><strong>Information</strong> Information you need to know.</li>    
-  					</ul>					  
+				    	<h3 class="panel-title">
+				    		<a href="enrollment_detail.html">Classes  - <em>Fall 2013</em></a>
+				    	</h3>
+				  	</div>
+				  	<table class="table">				
+						<tr class="headings">
+							<th id="course">Course</th>
+							<!-- <th id="title">Title</th>-->
+							<th id="days">Days</th>
+							<th id="time">Time</th>
+							<th id="location">Location</th>
+						</tr>
+						<tr id="661">
+							<td class="">
+								<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">BIOL-105<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li class="active"><a href="#detail">detail</a></li>
+										<li><a href="#map">map</a></li>
+										<li><a href="#books">books</a></li>
+										<li><a href="#remove">drop</a></li>
+									</ul>
+								</div>
+							</td><!-- <td class="">Biology I</td>-->
+							<td class="">MWF</td>
+							<td class="">12:20PM-1:10PM</td>
+							<td class="">COPH 142</td></tr>
+						<tr id="335"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SPCH-100<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Fund of Speech Comm</td>--><td class="">MWF</td><td class="">12:20PM-1:10PM</td><td class="">MC 133</td></tr>
+						<tr id="663"><td class=""><div class="dropdown"><a href="#" class="dropdonwn-toggle" data-toggle="dropdown">HIST-251<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">American History</td>--><td class="">TR</td><td class="">10:50AM-12:15PM</td><td class="">COPH 142</td></tr>
+						<tr id="191"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MKT-300<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Marketing</td>--><td class="">MWF</td><td class="">10:10AM-10:50AM</td><td class="">WSTC E123</td></tr>
+						<tr id="210"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACCT-250<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Acct I</td>--><td class="">TR</td><td class="">1:60PM-3:15PM</td><td class="">WSTC E221</td></tr>
+					</table>
+				  	<div class="panel-body text-right">
+				    	<strong>Credit Hours:&#160;</strong>16&#160;&#160;&#160;&#160;
+				  	</div>
 				</div>
 				
 				<div class="panel panel-brand" id="early-reg" style="display:none;">
@@ -198,34 +224,23 @@
 						</div>
 				    	<strong>Credit Hours:&#160;</strong><span id="hrs">0</span>&#160;&#160;&#160;&#160;
 				  	</div>
-				</div>
-				
-				<div class="panel panel-brand">
-				  	<div class="panel-heading brand-back">
+				</div>			
+
+				<div id="message-center" class="panel panel-brand">
+					<div class="panel-heading brand-back">
 				  		<div class="pull-right">
-				  			<a href="enrollment_detail.html" class="btn btn-outline-inverse btn-xs">Details</a>
+				  			<i class="fa fa-envelope fa-lg"></i> 
 				  		</div>
-				    	<h3 class="panel-title">
-				    		<i class="fa fa-pencil"></i> Classes  - <em>Fall 2013</em>
-				    	</h3>
-				  	</div>
-				  	<table class="table">				
-						<tr class="headings">
-							<th id="course">Course</th>
-							<!-- <th id="title">Title</th>-->
-							<th id="days">Days</th>
-							<th id="time">Time</th>
-							<th id="location">Location</th>
-						</tr>
-						<tr id="661"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BIOL-105<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Biology I</td>--><td class="">MWF</td><td class="">12:20PM-1:10PM</td><td class="">COPH 142</td></tr>
-						<tr id="335"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SPCH-100<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Fund of Speech Comm</td>--><td class="">MWF</td><td class="">12:20PM-1:10PM</td><td class="">MC 133</td></tr>
-						<tr id="663"><td class=""><div class="dropdown"><a href="#" class="dropdonwn-toggle" data-toggle="dropdown">HIST-251<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">American History</td>--><td class="">TR</td><td class="">10:60AM-12:15PM</td><td class="">COPH 142</td></tr>
-						<tr id="191"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MKT-300<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Marketing</td>--><td class="">MWF</td><td class="">10:10AM-10:60AM</td><td class="">WSTC E123</td></tr>
-						<tr id="210"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACCT-250<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Acct I</td>--><td class="">TR</td><td class="">1:60PM-3:15PM</td><td class="">WSTC E221</td></tr>
-					</table>
-				  	<div class="panel-body text-right">
-				    	<strong>Credit Hours:&#160;</strong>16&#160;&#160;&#160;&#160;
-				  	</div>
+					 	<h3 class="panel-title">
+					 		<a href="#">Messages</a>
+					 	</h3>
+					 </div>
+					 <ul class="list-group">
+					  	<li class="list-group-item alert-danger"><strong>Hold</strong> You need to take action before registration.</li>
+					    <li class="list-group-item alert-warning"><strong>ToDo</strong> You have a task that needs to be completed.</li>
+					    <li class="list-group-item alert-success"><strong>Action</strong> Action items ie Enrollment Appointment</li>
+					    <li class="list-group-item alert-info"><strong>Information</strong> Information you need to know.</li>    
+  					</ul>					  
 				</div>
 						
 			</div>
@@ -235,10 +250,10 @@
 						<div class="panel panel-brand">							
 						  	<div class="panel-heading brand-back">
 						  		<div class="pull-right">
-						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  			<i class="fa fa-usd fa-lg"></i> 
 						  		</div>
 						    	<h3 class="panel-title">
-						    		<i class="fa fa-usd"></i> What I Owe
+						    		<a href="#">What I Owe</a>
 						    	</h3>
 						  	</div>
 						  	<div class="panel-body" style="height:97px">
@@ -251,10 +266,10 @@
 						<div class="panel panel-brand">
 						  	<div class="panel-heading brand-back">
 						  		<div class="pull-right">
-						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  			<i class="fa fa-plus-square fa-lg"></i> 
 						  		</div>
 						    	<h3 class="panel-title">
-						    		<i class="fa fa-plus-square-o"></i> Financial Aid
+						    		<a href="#">Financial Aid</a>
 						    	</h3>
 						  	</div>
 						  	<div class="panel-body">
@@ -272,10 +287,10 @@
 						<div class="panel panel-brand">
 						  	<div class="panel-heading brand-back">
 						  		<div class="pull-right">
-						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  			<i class="fa fa-user fa-lg"></i> 
 						  		</div>
 						    	<h3 class="panel-title">
-						    		<i class="fa fa-user"></i> Profile
+						    		<a href="#">Profile</a>
 						    	</h3>
 						  	</div>
 						  	
@@ -300,10 +315,10 @@
 						<div class="panel panel-brand">
 						  	<div class="panel-heading brand-back">
 						  		<div class="pull-right">
-						  			<a href="#" class="btn btn-outline-inverse btn-xs">Details</a>
+						  			<i class="fa fa-book fa-lg"></i> 
 						  		</div>
 						    	<h3 class="panel-title"> 
-						    		<i class="fa fa-book"></i> Records
+						    		<a href="#">Records</a>
 						    	</h3>
 						  	</div>
 						  	<div class="panel-body">
