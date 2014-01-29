@@ -22,7 +22,20 @@ body>div#content{
 }
 
 header.navbar.navbar-inverse{
-	padding-top: 41px;
+	padding-top: 49px;
+	background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,#563d7c), color-stop(100%,#463265));  
+    background: -webkit-linear-gradient(top,  #333333 31%,#000000 100%);  
+    background: -moz-linear-gradient(top,  #333333 31%, #000000 100%);  
+    background: -o-linear-gradient(top, #333333 31%,#000000 100%);  
+    background: -ms-linear-gradient(top, #333333 31%,#000000 100%);  
+    background: linear-gradient(to bottombottom,  #333333 31%,#000000 100%);  
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 );*/
+    filter: none !important; /* Needed for IE */
+}
+
+header.navbar.navbar-inverse ul.visible-xs, 
+header.navbar.navbar-inverse ul.visible-sm{
+	padding-top: 61px;
 	background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,#563d7c), color-stop(100%,#463265));  
     background: -webkit-linear-gradient(top,  #333333 31%,#000000 100%);  
     background: -moz-linear-gradient(top,  #333333 31%, #000000 100%);  
@@ -41,9 +54,11 @@ h3.panel-title a{
 }
 
 nav.navbar{
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border-radius:0;
 	min-height:0; 
-	margin-bottom:0;
+	margin-bottom:0;	
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
@@ -54,13 +69,7 @@ nav.navbar.brand-back div,
 nav.navbar.brand-back a{
 	/*background-color: #000000;*/
 	/*color: #fff;*/
-}
 
-div.pull-left.headerlogo{
-	display: inline-block;
-    height: 100%;
-	vertical-align: middle;
-	/*background-color: #000000;*/
 }
 
 /* STAFF | FACULTY | STUDENT tabs */
@@ -75,7 +84,7 @@ ul.nav.navbar-nav li.active a{
 
 #content{
 	padding:15px;
-	padding-top: 10px; 
+	padding-top: 30px; 
 	min-height:400px;
 	display: block;
 }
@@ -113,8 +122,8 @@ li.dropdown a{
 li.active a:hover,
 li.dropdown a.dropdown-toggle:hover,
 li.dropdown a.dropdown-toggle:focus{
-	background-color:#333 !important;
-	color: #fc1 !important;	
+	background-color:#ddae00 !important;
+	/*color: #fc1 !important;	*/
 }
 
 .btn-outline-inverse{
