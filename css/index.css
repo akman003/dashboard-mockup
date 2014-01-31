@@ -1,24 +1,38 @@
-body{
-	background-color: #222222;
-}
-a,
-a:focus,
-a:hover,
-a:visited{color:#333333}
-a .caret{border-color: #563D7C rgba(0, 0, 0, 0) -moz-use-text-color;}
-header.navbar,
-footer.navbar{
-	border-radius:0;
-	margin-bottom:0;	
-}
-
 /*Dev note: Any changes to CSS goes between these DEV tags*/
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*-------------------------------------------------------------------------------------------*/
 /*AKOEHLER DEV BEGIN*/
+@media (min-width: 768px){
+	.navbar-toggle {
+		/*display: inline !important;*/
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 8px;
+		margin-right: 15px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+}
 
+body{
+	background-color: #222222;
+}
 body>div#content{
 	background-color:#e5e2dd;
+}
+
+img { 
+  max-width: 100%;
+}
+
+a,
+a:focus,
+a:hover,
+a:visited{
+	color:#333333 !important; 
 }
 
 header.navbar.navbar-inverse{
@@ -33,6 +47,34 @@ header.navbar.navbar-inverse{
     filter: none !important; /* Needed for IE */
 }
 
+header.navbar,
+footer.navbar{
+	border-radius:0;
+	margin-bottom:0;	
+}
+
+header.navbar{
+	margin-top: 12px;
+}
+
+/*Mobile devices only*/
+/*|||||||||||||||||||*/
+button.navbar-toggle{
+	background-color: #333333;
+}
+div.mbHeaderImage{
+	position: relative;
+float: left;
+padding-left: 10px;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fc1;
+}
+/*|||||||||||||||||||*/
+
 header.navbar.navbar-inverse ul.visible-xs, 
 header.navbar.navbar-inverse ul.visible-sm{
 	padding-top: 61px;
@@ -44,6 +86,12 @@ header.navbar.navbar-inverse ul.visible-sm{
     background: linear-gradient(to bottombottom,  #333333 31%,#000000 100%);  
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 );*/
     filter: none !important; /* Needed for IE */
+}
+
+header a.navbar-brand{
+	color:#563d7c !important;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-weight:bold;	
 }
 
 h3.panel-title a{
@@ -75,6 +123,10 @@ nav.navbar.brand-back a{
 /* STAFF | FACULTY | STUDENT tabs */
 ul.nav.navbar-nav li.active a{
 	color: #fc1 !important;
+}
+
+ul.nav.navbar-nav a:hover{
+	color: #fff !important;
 }
 
 #home{
@@ -112,7 +164,7 @@ li.dropdown a{
 	font-size: 10pt !important;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	/*font-weight: bold;*/
-	color: #000 !important;	
+	color: #000000 !important;	
 }
 
 .caret{
@@ -137,19 +189,10 @@ li.dropdown a.dropdown-toggle:focus{
 /*-------------------------------------------------------------------------------------------*/
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-header a.navbar-brand{
-	color:#563d7c !important;
-	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
-	font-weight:bold;	
-}
-
 .brand-back .navbar-nav>li>a{color:#cdbfe3; padding-top:2px; padding-bottom:2px;}
 .brand-back .navbar-nav>li>a>.caret{border-bottom-color:#cdbfe3; border-top-color:#cdbfe3;}
 .brand-back .navbar-nav>li>a:hover,
 .brand-back .navbar-nav>li>a:focus{color:#fff;}
-.brand-back .navbar-nav>li>a:hover>.caret,
-.nav>li>a:hover,
-.nav>li>a:focus{background-color:#463265;}
 .brand-back .nav .open > a, 
 .brand-back .nav .open > a:hover, 
 .brand-back .nav .open > a:focus {
