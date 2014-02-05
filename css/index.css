@@ -86,6 +86,10 @@ h3.panel-title a{
 	/*font-weight: bold;*/
 	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 }
+.panel-brand{
+	border-color: #000000;
+	border-width: 1px;
+}
 
 nav.navbar{
 	padding-top: 5px;
@@ -95,15 +99,18 @@ nav.navbar{
 	margin-bottom:0;	
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-	color: #fff;
-	background-color: #333;
+.nav-pills li a{
+	font-size: 10pt !important;
 }
-nav.navbar.brand-back div,
-nav.navbar.brand-back a{
-	/*background-color: #000000;*/
-	/*color: #fff;*/
 
+.nav-pills li.active a:focus,
+.nav-pills li.active a{
+	color: #fc1 !important;
+	background-color: #333;	
+}
+
+.nav-pills a:hover{
+	background-color:#ddae00 !important;
 }
 
 /* STAFF | FACULTY | STUDENT tabs */
@@ -113,11 +120,6 @@ ul.nav.navbar-nav li.active a{
 
 ul.nav.navbar-nav a:hover{
 	color: #fff !important;
-}
-
-#home{
-	color: #fc1 !important;
-	/*background-color: #fc1;*/
 }
 
 #content{
@@ -149,7 +151,6 @@ li.active a,
 li.dropdown a{
 	font-size: 10pt !important;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	/*font-weight: bold;*/
 	color: #000000 !important;	
 }
 
@@ -157,11 +158,12 @@ li.dropdown a{
 	border-bottom-color:#000000 !important; 
 	border-top-color:#000000 !important;
 }
+
+/*Mobile only*/
 li.active a:hover,
 li.dropdown a.dropdown-toggle:hover,
 li.dropdown a.dropdown-toggle:focus{
 	background-color:#ddae00 !important;
-	/*color: #fc1 !important;	*/
 }
 
 .btn-outline-inverse{
@@ -187,15 +189,12 @@ li.dropdown a.dropdown-toggle:focus{
 
 .page-title{
 	margin-top:0;
-	border-bottom:2px solid #333333;
-	
+	border-bottom:2px solid #333333;	
 }
 .page-title a:hover,
 .page-title a:focus{text-decoration:none;}
 .caret-lg{border-width: 6px 6px 0; margin-top: -4px;}
-.panel-brand{
-	border-color: #463265;
-}
+
 #message-center .alert{
 	margin-bottom:5px;
 	padding:5px;
@@ -227,12 +226,6 @@ border-color: #fff;
 .panel-body .col-xs-5 .dl-horizontal dd,
 .panel-body .col-xs-6 .dl-horizontal dd,
 .panel-body .col-xs-7 .dl-horizontal dd{margin-left:80px;}
-/*.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-	color: #000000;
-    background-color: #fff !important;
-    background-image: linear-gradient(to bottom, #e5e2dd 0px, #e5e2dd 100%);
-    background-repeat: repeat-x;
-}*/
 
 footer.navbar{
 	border-bottom:none;
@@ -240,7 +233,7 @@ footer.navbar{
 	border-right:none;
 }
 
-.right-col>.list-group>.list-group-item{
+/*.right-col>.list-group>.list-group-item{
 	padding:0;
 }
 .right-col .panel-default{border:none;}
@@ -268,7 +261,7 @@ footer.navbar{
     background-repeat: repeat-x;
     border-color: #3278B3;
     text-shadow: 0 -1px 0 #3071A9;
-}
+}*/
 .btn-active:hover,
 .btn-active:focus,
 .btn-active:active,
