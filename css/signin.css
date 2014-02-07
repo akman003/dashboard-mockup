@@ -1,0 +1,82 @@
+html,body{
+    height: 100%;
+}
+body{
+  background-color: #333333;
+}
+
+#content {
+  padding: 15px;
+  padding-top: 30px;
+  min-height: 400px;
+  display: block;
+  background-color: #e5e2dd;
+}
+
+hr{
+  border-color: #333333 !important;
+}
+.brand-back{
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15) !important;
+  background-color: #ffc210 !important;
+  border-color: #000 !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1) !important;
+  color:#333333;
+  
+  background: #fff;  
+    background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,#fc1), color-stop(100%,#ffc210));  
+    background: -webkit-linear-gradient(top, #fc1 31%,#ffc210 100%);  
+    background: -moz-linear-gradient(top,  #fc1 31%, #ffc210 100%);  
+    background: -o-linear-gradient(top, #fc1 31%,#ffc210 100%);  
+    background: -ms-linear-gradient(top, #fc1 31%,#ffc210 100%);  
+    background: linear-gradient(to bottombottom,  #fc1 31%,#ffc210 100%);  
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1', endColorstr='#ffc210',GradientType=0 );*/
+    filter: none !important; /* Needed for IE */
+}
+.panel-brand{
+  border-color: #000000;
+  border-width: 1px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+  color: #333333;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}
