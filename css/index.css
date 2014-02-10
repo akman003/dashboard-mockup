@@ -96,13 +96,14 @@ h3.panel-title a{
 	border-width: 1px;
 }
 
-/*nav.navbar{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius:0;
-	min-height:0; 
-	margin-bottom:0;	
-}*/
+.navbar-collapse {
+max-height: 400px !important;
+}
+.navbar-nav .open .dropdown-menu {
+
+background-color: #fff;
+
+}
 
 .nav li.active a:focus,
 .nav li.active a{
