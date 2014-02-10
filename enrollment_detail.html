@@ -12,7 +12,6 @@
 	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/typeahead/0.9.3/typeahead.js"></script>
 	<link rel="stylesheet" href="lib/font-awesome-4.0.3/css/font-awesome.min.css">
-
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -42,24 +41,24 @@
 
 	<nav class="navbar brand-back navbar-fixed-top">
 		<div class="navbar-header">
-			<div class="pull-left visible-xs visible-sm mbHeaderImage">
+			<div class="pull-left visible-xs mbHeaderImage">
 				<img src="img/wsc_headerLogo.png" height="35" width="35"/>
 			</div>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
+			<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
 			</button>
 			<!-- <a class="navbar-brand" href="#">Project name</a> -->
         </div>
+        <div class="pull-right visible-md visible-lg">
+			<img src="img/wsc_headerLogo.png" height="45" width="45"/>
+		</div>	
 
-		<div class="navbar-collapse collapse">
-			<div class="pull-right visible-md visible-lg">
-				<img src="img/wsc_headerLogo.png" height="35" width="35"/>
-			</div>			
-
-			<ul class="nav nav-pills visible-md visible-lg">				
+		<div class="collapse navbar-collapse">
+			<!-- Small/XS Menu MOBILE ONLY-->
+			<ul class="nav navbar-nav">				
 				<li>
 					<a href="index.html">Home</a>
 				</li>
@@ -67,63 +66,26 @@
 					<a href="enrollment_detail.html">Enrollment</a>
 				</li>
 				<li>
-					<a href="#" class="dropdown-toggle" >Academics</a>
+					<a href="#">Student Account</a>
 				</li>
 				<li>
-					<a href="#" >Student Accounts</a>			        
+					<a href="#">Financial Aid</a>	        
 				</li>
 				<li>
-					<a href="#">Financial Aid</a>			        
+					<a href="#">Records</a>	
 				</li>
 				<li>
-					<a href="#">Admissions</a>
-				</li>
-				<li>
-					<a href="#" >Profile</a>			        
-				</li>
-				<li>
-					<a href="#" >Campus</a>			        
-				</li>
-			</ul>
-
-			<!-- Small/XS Menu MOBILE ONLY-->
-			<ul class="nav visible-xs visible-sm">				
-				<li class="dropdown">
-					<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-				</li>
-				<li class="active dropdown">
-					<a href="enrollment_detail.html">Enrollment</a>
+					<a href="#">Additional Services</a>	
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics</a>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Accounts</a>	        
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Aid</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Campus</a>	
-				</li>
-				<hr>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">STAFF</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">FACULTY</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">STUDENT</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGN OUT</a>	
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Staff</a></li>
+						<li><a href="#">Faculty</a></li>
+						<li><a href="#">Student</a></li>
+						<li class="divider"></li>
+						<li><a href="login.html">Sign Out</a></li>
+					</ul>
 				</li>
 			</ul>
 		</div>
@@ -133,17 +95,6 @@
 		<div class="pull-left">
 			<!-- Large header image goes here -->
 			<img src="img/wildcatsOnlineLogoBig.png" />
-		</div>
-	    <div class="pull-right">
-			<div class="collapse navbar-collapse ">
-				<ul class="nav navbar-nav ">
-					<li><a href="#">STAFF</a></li>
-					<li><a href="#">FACULTY</a></li>
-					<li class="active"><a href="#">STUDENT</a></li>
-					
-					<li><a href="#">SIGN OUT</a></li>
-				</ul>
-			</div>
 		</div>
 	</header>
 	<!-- END PAGE HEADER -->

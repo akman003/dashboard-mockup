@@ -97,12 +97,10 @@ h3.panel-title a{
 }
 
 .navbar-collapse {
-max-height: 400px !important;
+	max-height: 400px !important;
 }
 .navbar-nav .open .dropdown-menu {
-
-background-color: #fff;
-
+	background-color: #fff;
 }
 
 .nav li.active a:focus,
