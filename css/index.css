@@ -42,6 +42,11 @@ footer.navbar{
 header.navbar{
 	margin-top: 12px;
 }
+.navbar{
+max-height: 340px;
+padding-right: 15px;
+padding-left: 15px;
+}
 
 /*Mobile devices only*/
 /*|||||||||||||||||||*/
@@ -91,35 +96,27 @@ h3.panel-title a{
 	border-width: 1px;
 }
 
-nav.navbar{
+/*nav.navbar{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius:0;
 	min-height:0; 
 	margin-bottom:0;	
-}
+}*/
 
-.nav-pills li a{
-	font-size: 10pt !important;
-}
-
-.nav-pills li.active a:focus,
-.nav-pills li.active a{
+.nav li.active a:focus,
+.nav li.active a{
 	color: #fc1 !important;
 	background-color: #333;	
 }
 
-.nav-pills a:hover{
+.nav a:hover{
 	background-color:#ddae00 !important;
 }
 
 /* STAFF | FACULTY | STUDENT tabs */
 ul.nav.navbar-nav li.active a{
 	color: #fc1 !important;
-}
-
-ul.nav.navbar-nav a:hover{
-	color: #fff !important;
 }
 
 #content{
@@ -148,7 +145,7 @@ ul.nav.navbar-nav a:hover{
 }
 
 li.active a,
-li.dropdown a{
+ul.nav a{
 	font-size: 10pt !important;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000000 !important;	
@@ -157,6 +154,10 @@ li.dropdown a{
 .caret{
 	border-bottom-color:#000000 !important; 
 	border-top-color:#000000 !important;
+}
+
+div..infoleft{
+	border-right: #fff;
 }
 
 /*Mobile only*/
@@ -176,85 +177,6 @@ li.dropdown a.dropdown-toggle:focus{
 /*AKOEHLER DEV END*/
 /*-------------------------------------------------------------------------------------------*/
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
-/*.brand-back .navbar-nav>li>a{color:#cdbfe3; padding-top:2px; padding-bottom:2px;}
-.brand-back .navbar-nav>li>a>.caret{border-bottom-color:#cdbfe3; border-top-color:#cdbfe3;}
-.brand-back .navbar-nav>li>a:hover,
-.brand-back .navbar-nav>li>a:focus{color:#fff;}
-.brand-back .nav .open > a, 
-.brand-back .nav .open > a:hover, 
-.brand-back .nav .open > a:focus {
-    background-color: #fc1;
-}
-
-.page-title{
-	margin-top:0;
-	border-bottom:2px solid #333333;	
-}
-.page-title a:hover,
-.page-title a:focus{text-decoration:none;}
-.caret-lg{border-width: 6px 6px 0; margin-top: -4px;}
-
-#message-center .alert{
-	margin-bottom:5px;
-	padding:5px;
-}
-
-.btn-outline-inverse:hover,
-.btn-outline-invers:focus{
-	color: #563d7c !important;
-text-shadow: none;
-background-color: #fff;
-border-color: #fff;
-
-}
-.heading-float{
-	margin:0 10px 0 0;	
-	line-height:25px;
-	font-size:20px;
-}
-.heading-float+p{font-size:.8em;}
-.profile-sm{
-	margin:-15px -15px 15px 15px;
-	width:100px;
-}
-.panel-body .col-xs-4 .dl-horizontal dt,
-.panel-body .col-xs-5 .dl-horizontal dt,
-.panel-body .col-xs-6 .dl-horizontal dt,
-.panel-body .col-xs-7 .dl-horizontal dt{width:60px;}
-.panel-body .col-xs-4 .dl-horizontal dd,
-.panel-body .col-xs-5 .dl-horizontal dd,
-.panel-body .col-xs-6 .dl-horizontal dd,
-.panel-body .col-xs-7 .dl-horizontal dd{margin-left:80px;}
-
-footer.navbar{
-	border-bottom:none;
-	border-left:none;
-	border-right:none;
-}
-
-.btn-active:hover,
-.btn-active:focus,
-.btn-active:active,
-.btn-active{
-	background-color:#563d7c;
-	background-image: linear-gradient(to bottom, #563d7c 0px, #463265 100%);
-    background-repeat: repeat-x;
-    border-color: #3278B3;
-    text-shadow: 0 -1px 0 #3071A9;
-    color:#fff !important;
-    width:100%;
-    margin-bottom:15px;
-}
-.special>.dropdown-menu{
-	width:400px;
-	left:-400px;
-}
-
-.alert-event{color:black;}
-.alert-event.alert-danger{color: #B94A48; border-color: #B94A48;}
-.alert-event.alert-danger .fc-event-time:after{content:" Full";}
-.alert-event.alert-success{color: #468847; border-color: #468847;}*/
 
 /* CONTENT */
 .map{

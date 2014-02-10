@@ -41,88 +41,51 @@
 
 	<nav class="navbar brand-back navbar-fixed-top">
 		<div class="navbar-header">
-			<div class="pull-left visible-xs visible-sm mbHeaderImage">
+			<div class="pull-left visible-xs mbHeaderImage">
 				<img src="img/wsc_headerLogo.png" height="35" width="35"/>
 			</div>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
+			<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
 			</button>
 			<!-- <a class="navbar-brand" href="#">Project name</a> -->
         </div>
+        <div class="pull-right visible-md visible-lg">
+			<img src="img/wsc_headerLogo.png" height="40" width="40"/>
+		</div>	
 
-		<div class="navbar-collapse collapse">
-			<div class="pull-right visible-md visible-lg">
-				<img src="img/wsc_headerLogo.png" height="35" width="35"/>
-			</div>			
-
-			<ul class="nav nav-pills visible-md visible-lg">				
-				<li class="active">
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="enrollment_detail.html">Enrollment</a>
-				</li>
-				<li>
-					<a href="#" class="dropdown-toggle" >Academics</a>
-				</li>
-				<li>
-					<a href="#" >Student Accounts</a>			        
-				</li>
-				<li>
-					<a href="#">Financial Aid</a>			        
-				</li>
-				<li>
-					<a href="#">Admissions</a> 
-				</li>
-				<li>
-					<a href="#" >Profile</a>			        
-				</li>
-				<li>
-					<a href="#" >Campus</a>			        
-				</li>
-			</ul>
-
+		<div class="collapse navbar-collapse">
 			<!-- Small/XS Menu MOBILE ONLY-->
-			<ul class="nav visible-xs visible-sm">				
+			<ul class="nav navbar-nav">				
 				<li class="active">
 					<a href="index.html">Home</a>
 				</li>
-				<li class="dropdown">
+				<li>
 					<a href="enrollment_detail.html">Enrollment</a>
 				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics</a>
+				<li>
+					<a href="#">Student Account</a>
+				</li>
+				<li>
+					<a href="#">Financial Aid</a>	        
+				</li>
+				<li>
+					<a href="#">Records</a>	
+				</li>
+				<li>
+					<a href="#">Additional Services</a>	
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Accounts</a>	        
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Aid</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Campus</a>	
-				</li>
-				<hr>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">STAFF</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">FACULTY</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">STUDENT</a>	
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGN OUT</a>	
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Staff</a></li>
+						<li><a href="#">Faculty</a></li>
+						<li><a href="#">Student</a></li>
+						<li class="divider"></li>
+						<li><a href="login.html">Sign Out</a></li>
+					</ul>
 				</li>
 			</ul>
 		</div>
@@ -132,17 +95,6 @@
 		<div class="pull-left">
 			<!-- Large header image goes here -->
 			<img src="img/wildcatsOnlineLogoBig.png" />
-		</div>
-	    <div class="pull-right">
-			<div class="collapse navbar-collapse ">
-				<ul class="nav navbar-nav ">
-					<li><a href="#">STAFF</a></li>
-					<li><a href="#">FACULTY</a></li>
-					<li class="active"><a href="#">STUDENT</a></li>
-					
-					<li><a href="login.html">SIGN OUT</a></li>
-				</ul>
-			</div>
 		</div>
 	</header>
 	<!-- END PAGE HEADER -->
@@ -239,10 +191,21 @@
 				    	</h3>
 				  	</div>
 				  	<div class="panel-body">
-				    	<table style="width:100%">
-				    		<tr><th class="text-right" style="padding-right:10px;">Fall</th><td>$1,100</td></tr>
-				    		<tr><th class="text-right" style="padding-right:10px;">Spring</th><td>$1,100</td></tr>
-				    		<tr><th class="text-right" style="padding-right:10px;">Summer</th><td>$540</td></tr></table>
+				    	<table class="table table-condensed">
+					    	<tr>
+					    		<th>Fall</th>
+								<td>$1,100</td>							
+							</tr>
+							<tr class="success">
+								<th>Spring</td>
+								<td>$1,100</td>
+							</tr>
+							<tr>
+								<th>Summer</td>
+								<td>$540</td>
+							</tr>
+							<tr />
+					    </table>
 				  	</div>
 				</div>
 			</div>
@@ -261,16 +224,23 @@
 				  	</div>
 				  	
 				  	<div class="panel-body">
-				    	<img src="img/Profile.png" class="pull-right profile-sm"/>
+				    	<!-- <img src="img/Profile.png" class="pull-right profile-sm"/> -->
 				    	<h4>Contact Information</h4>
-				    	<dl class="dl-horizontal">
-				    		<dt>Permanent Address</dt>
-				    		<dd>416 East 26th Street<br/>Apt 122<br/>Rawlins, NE 68847</dd>
-				    		<dt>Campus Email</dt>
-				    		<dd>schultzjj@go.purple.edu</dd>
-				    		<dt>Preferred Phone</dt>
-				    		<dd>555/867-5309</dd>
-				    	</dl>
+
+				    	<table class="table table-striped">
+					    	<tr>
+					    		<th>Permanent Address</th>
+								<td>416 East 26th Street<br/>Apt 122<br/>Rawlins, NE 68847</td>							
+							</tr>
+							<tr>
+								<th>Campus Email</td>
+								<td>schultzjj@go.purple.edu</td>
+							</tr>
+							<tr>
+								<th>Preferred Phone</td>
+								<td>555/867-5309</td>
+							</tr>
+					    </table>
 				  	</div>
 				</div>
 			</div>
@@ -286,27 +256,37 @@
 				  	</div>
 				  	<div class="panel-body">
 				  		<div class="row">
-				  			<div class="col-xs-5">
+				  			<div class="col-xs-12 col-md-4">
 						    	<h4>Academics</h4>
-						    	<dl class="dl-horizontal">
-						    		<dt>Standing</dt>
-						    		<dd>Sophmore</dd>
-						    		<dt>GPA</dt>
-						    		<dd>2.933</dd>
-						    	</dl>
+
+						    	<table class="table table-striped">
+							    	<tr>
+							    		<th>Standing</th>
+										<th>GPA</th>							
+									</tr>
+									<tr>
+										<td>Sophomore</td>
+										<td>3.141</td>
+									</tr>
+							    </table>
 					    	</div>
-					    	<div class="col-xs-7">
+
+					    	<div class="col-xs-12 col-md-8">
 						    	<h4>Advisor</h4>
-						    	<dl class="dl-horizontal">
-						    		<dt>Name</dt>
-						    		<dd>Beckman,Bob a</dd>
-						    		<dt>Email</dt>
-						    		<dd><a href="mailto:beckmanb@purple.edu">beckmanb@purple.edu</a></dd>
-						    	</dl>
+						    	<table class="table table-striped">
+							    	<tr>									
+										<th>Name</th>
+										<th>Email</th>							
+									</tr>
+									<tr>
+										<td>Beckman,Bob A</td>
+										<td><a href="mailto:beckmanb@purple.edu">beckmanb@purple.edu</a></td>
+									</tr>
+							    </table>
 					    	</div>
 					    </div>
 				    	<h4>Program</h4>
-				    	<table class="table"> 
+				    	<table class="table table-striped"> 
 							<tr>									
 							<!-- <th>Program</th>-->
 							<th>Degree</th>
