@@ -2,7 +2,11 @@
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /*-------------------------------------------------------------------------------------------*/
 /*AKOEHLER DEV BEGIN*/
-
+html, body, #map-canvas  {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 body{
 	background-color: #222222;
 }
@@ -19,6 +23,10 @@ a:focus,
 a:hover,
 a:visited{
 	color:#333333 !important; 
+}
+
+div.collapse a:hover{
+
 }
 
 header.navbar.navbar-inverse{
@@ -104,13 +112,19 @@ h3.panel-title a{
 }
 
 .nav li.active a:focus,
+.nav li.active a:hover,
 .nav li.active a{
 	color: #fc1 !important;
-	background-color: #333;	
+	background-color: #333333;	
 }
 
-.nav a:hover{
+.nav li a:hover{
 	background-color:#ddae00 !important;
+}
+
+/*No change to background on active link hover*/
+.nav li.active a:hover{
+	background-color:#333333 !important;
 }
 
 /* STAFF | FACULTY | STUDENT tabs */
@@ -125,7 +139,25 @@ ul.nav.navbar-nav li.active a{
 	display: block;
 }
 
-.brand-back{
+.navbar-fixed-top{
+	text-shadow: 0 -1px 0 rgba(0,0,0,.15) !important;
+	background-color: #ffc210 !important;
+	border-color: #000 !important;
+	box-shadow: 0 1px 0 rgba(255,255,255,.1) !important;
+	color:#333333;
+	
+	background: #fff;  
+    background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,#fc1), color-stop(100%,#ffc210));  
+    background: -webkit-linear-gradient(top, #fc1 31%,#ffc210 100%);  
+    background: -moz-linear-gradient(top,  #fc1 31%, #ffc210 100%);  
+    background: -o-linear-gradient(top, #fc1 31%,#ffc210 100%);  
+    background: -ms-linear-gradient(top, #fc1 31%,#ffc210 100%);  
+    background: linear-gradient(to bottombottom,  #fc1 31%,#ffc210 100%);  
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1', endColorstr='#ffc210',GradientType=0 );*/
+    filter: none !important; /* Needed for IE */
+}
+
+.panel-heading{
 	text-shadow: 0 -1px 0 rgba(0,0,0,.15) !important;
 	background-color: #ffc210 !important;
 	border-color: #000 !important;
@@ -155,7 +187,7 @@ ul.nav a{
 	border-top-color:#000000 !important;
 }
 
-div..infoleft{
+div.infoleft{
 	border-right: #fff;
 }
 
@@ -173,13 +205,43 @@ li.dropdown a.dropdown-toggle:focus{
 	margin-top:-3px;
 }
 
+#map-canvas {
+  height: 500px;
+  width: 500px;
+}
+
+/*|||||||||||||||||||||||||||||||*/
+/*Configuration for header images*/
+.headerLogo-small{
+	display: block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url("../img/wsc_headerLogo-small.png") no-repeat;
+	width: 45px; /* Width of new image */
+	height: 45px; /* Height of new image */
+	padding-left: 45px; /* Equal to width of new image */
+}
+
+.headerLogo-big{
+	display: block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url("../img/wsc_headerLogo-big.png") no-repeat;
+	width: 768px; /* Width of new image */
+	height: 42px; /* Height of new image */
+	padding-left: 768px; /* Equal to width of new image */
+}
+
+/*Configuration for header images*/
+/*|||||||||||||||||||||||||||||||*/
+
 /*AKOEHLER DEV END*/
 /*-------------------------------------------------------------------------------------------*/
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /* CONTENT */
-.map{
+/*.map{
 	background: url("../img/map.png") repeat scroll 100% 100% rgba(0, 0, 0, 0);
     height: 300px;
     margin: -20px -20px -35px;
-}
+}*/

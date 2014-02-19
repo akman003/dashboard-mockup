@@ -12,6 +12,12 @@
 	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 	<script src="https://campuscontent.nebraska.edu/common/delphi/lib/typeahead/0.9.3/typeahead.js"></script>
 	<link rel="stylesheet" href="lib/font-awesome-4.0.3/css/font-awesome.min.css">
+
+	<!-- Google Maps -->
+	<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9CFP2Ko8EKMVMLYauGINdS9OlpJqaPI4&sensor=true">
+    </script>
+
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -19,21 +25,17 @@
     <![endif]-->	
 </head>
 <body>
+	<!-- <div id="map-canvas" /> -->
 	<!-- Modal -->
-	
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade bs-modal-lg" id="mapModal">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	        <h4 class="modal-title">Modal title</h4>
 	      </div>
-	      <div class="modal-body" id="myModaltext">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal" id="myModalCancel">Close</button>
-	        <button type="button" class="btn btn-primary" id="myModalSave">Save changes</button>
+	      <div class="modal-body">
+        	<div id="map-canvas"></div>
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
@@ -42,7 +44,7 @@
 	<nav class="navbar brand-back navbar-fixed-top">
 		<div class="navbar-header">
 			<div class="pull-left visible-xs mbHeaderImage">
-				<img src="img/wsc_headerLogo.png" height="35" width="35"/>
+				<img class="headerLogo-small"/>
 			</div>
 			<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -51,12 +53,11 @@
 				<span class="icon-bar"></span>
 			</button>
         </div>
-        <div class="pull-right visible-md visible-lg">
-			<img src="img/wsc_headerLogo.png" height="45" width="45"/>
+        <div class="pull-right visible-sm visible-md visible-lg mbHeaderImage">
+			<img class="headerLogo-small"/>
 		</div>	
 
 		<div class="collapse navbar-collapse">
-			<!-- Small/XS Menu MOBILE ONLY-->
 			<ul class="nav navbar-nav">				
 				<li class="active">
 					<a href="index.html">Home</a>
@@ -93,7 +94,7 @@
 	<header class="navbar navbar-inverse" role="banner">
 		<div class="pull-left">
 			<!-- Large header image goes here -->
-			<img src="img/wildcatsOnlineLogoBig.png" />
+			<img class="headerLogo-big" />
 		</div>
 	</header>
 	<!-- END PAGE HEADER -->
@@ -125,7 +126,7 @@
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">BIOL-105<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li class="active"><a href="#detail">detail</a></li>
-										<li><a href="#map">map</a></li>
+										<li><a href="#mapModal" data-toggle="modal">map</a></li>
 										<li><a href="#books">books</a></li>
 										<li><a href="#remove">drop</a></li>
 									</ul>
@@ -133,8 +134,27 @@
 							</td><!-- <td class="">Biology I</td>-->
 							<td class="">MWF</td>
 							<td class="">12:20PM-1:10PM</td>
-							<td class="">COPH 142</td></tr>
-						<tr id="335"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">SPCH-100<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Fund of Speech Comm</td>--><td class="">MWF</td><td class="">12:20PM-1:10PM</td><td class="">MC 133</td></tr>
+							<td class="">COPH 142</td>
+						</tr>
+						<tr id="335">
+							<td class="">
+								<div class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">SPCH-100<span class="caret"></span></a><ul class="dropdown-menu">
+									<li class="active">
+										<a href="#detail">detail</a>
+									</li>
+									<li>
+										<a href="#map">map</a>
+									</li>
+									<li>
+										<a href="#books">books</a>
+									</li>
+									<li>
+										<a href="#remove">drop</a>
+									</li>
+								</ul>
+							</div>
+						</td><!-- <td class="">Fund of Speech Comm</td>--><td class="">MWF</td><td class="">12:20PM-1:10PM</td><td class="">MC 133</td></tr>
 						<tr id="663"><td class=""><div class="dropdown"><a href="#" class="dropdonwn-toggle" data-toggle="dropdown">HIST-251<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">American History</td>--><td class="">TR</td><td class="">10:50AM-12:15PM</td><td class="">COPH 142</td></tr>
 						<tr id="191"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">MKT-300<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Marketing</td>--><td class="">MWF</td><td class="">10:10AM-10:50AM</td><td class="">WSTC E123</td></tr>
 						<tr id="210"><td class=""><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACCT-250<span class="caret"></span></a><ul class="dropdown-menu"><li class="active"><a href="#detail">detail</a></li><li><a href="#map">map</a></li><li><a href="#books">books</a></li><li><a href="#remove">drop</a></li></ul></div></td><!-- <td class="">Prin of Acct I</td>--><td class="">TR</td><td class="">1:60PM-3:15PM</td><td class="">WSTC E221</td></tr>

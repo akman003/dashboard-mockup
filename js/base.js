@@ -10,6 +10,18 @@
 		}
 		return false;
 	});
+
+	// Setup function for Google maps
+	// function initialize() {
+	//         var mapOptions = {
+	//           center: new google.maps.LatLng(-34.397, 150.644),
+	//           zoom: 8
+	//         };
+	//         var map = new google.maps.Map(document.getElementById("map-canvas"),
+	//             mapOptions);
+	//     }
+
+	//     google.maps.event.addDomListener(window, 'load', initialize);
 	
 	$(document).ready(function(){
 		window.$eScript = $('<script>');
@@ -17,16 +29,29 @@
 		$eScript.attr('type','text/javascript');
 		$eScript.appendTo('body');	
 	});
-	
+
+	// Re-initialize google maps with set lat/long
+	$('#mapModal').on('shown.bs.modal', function (e) {
+		var mapOptions = {
+	          center: new google.maps.LatLng(42.240630, -97.016050),
+	          zoom: 20
+	        };
+		var map = new google.maps.Map(document.getElementById("map-canvas"),
+	            mapOptions);
+		google.maps.event.trigger(map, 'resize');
+		map.setCenter(mapOptions.center);
+	});
+		
 	$(document).click(function(e){ 	
 		if(e.target.className.indexOf('menu-toggle') > -1){  
 			$(e.target).parent().toggleClass('open');
 			e.preventDefault();			
 		}	
-		else if(e.target.getAttribute('href') == '#map'){ 
+		else if(e.target.getAttribute('href') == '#map'){
 			//if(e.target.className.indexOf('menu-toggle') > -1){$(e.target).parent().attr('data-finder','here').removeClass('open');}
 			$(e.target).parent().parent().parent().attr('data-finder','here').removeClass('open');
-			modal.open('Campus Map',content.map,['Close']);
+
+			modal.open('Campus Map',content.map1,['Close']);
 			e.preventDefault();
 		}
 		else if(e.target.getAttribute('href') == '#detail'){ 
@@ -83,12 +108,12 @@
 			html += '</table>'
 */			
 			e.preventDefault();
-		}
+		} 
 	});
 }());
 
 var content = {
-	map:'<div class="map"></div>',	
+	map1:'<div id="map-canvas" />',	
 	classDetail:'<dl class="dl-horizontal"><dt>Class Number</dt><dd>11143</dd><dt>Course</dt><dd>PHYS-323</dd><dt>Title</dt><dd>Analog and Digital Electronics</dd><dt>Description</dt><dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in sem vel leo ultricies convallis non quis tellus. Sed porttitor ac magna a fringilla. Nunc porttitor ut nulla vel aliquam. Quisque eleifend dui vel semper vulputate. Praesent facilisis dui eu iaculis tincidunt.</dd><dt>Type</dt><dd>LEC</dd><dt>Instruction Mode</dt><dd>In Person</dd><dt>Location</dt><dd>BHS 108</dd><dt>Dates</dt><dd>Aug 25 - Dec 19</dd><dt>Days</dt><dd>TR</dd><dt>Time</dt><dd>08:00AM-09:45AM</dd></dl>',
 	understand:'<p>I understand that by submitting course registrations via MyBLUE, I am considered officially enrolled and unless I complete the procedure to drop or withdraw completely, I am accountable for all tuition and related fees for my classes. Failure to attend class meetings does not constitute withdrawal from the class and does NOT eliminate the obligation to pay all tuition and related fees.</p><p>Detailed information on drop deadlines and procedures can be found <a herf="#">here</a>.</p>',
 	contact:'<p>Please verify that all contact information is correct.  All attempts to contact you will use this information.</p><dl class="dl-horizontal"><dt>Address</dt><dd>416 East 26th<br/>Kearney, NE  68847</dd><dt>Phone</dt><dd>913/674-9762</dd><dt>Email</dt><dd>pswensn@nebraska.edu</dd></dl>',
