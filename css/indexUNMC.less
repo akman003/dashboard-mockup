@@ -1,4 +1,4 @@
-// Set initial styling variables
+// +++++ Set initial styling variables +++++ // 
 
 // Primary 
 @base: #fff;
@@ -22,7 +22,7 @@
 @headerLogo-big-width: 345px;
 @headerLogo-big-height: 110px;
 
-
+// +++++ Body +++++ //
 html, body, #map-canvas {
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ img {
     max-width: 100%;
 }
 a,a:focus,a:hover,a:visited {
-    color:#000 !important;
+    color:#000;
 }
 header.navbar.navbar-inverse {
     padding-top: 49px;
@@ -65,13 +65,7 @@ header.navbar {
 button.navbar-toggle {
     background-color: @base;
 }
-div.mbHeaderImage {
-    position: relative;
-    float: left;
-    padding-left: 10px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
+
 .navbar-toggle {
     .icon-bar {
         background-color: @secondary;
@@ -140,8 +134,8 @@ ul.nav.navbar-nav {
     background-color: @secondary-gradient-alt !important;
     border-color: #000 !important;
     box-shadow: 0 1px 0 rgba(255,255,255,.1) !important;
-    color:#333333;
-    background: #fff;
+    color:#fff;
+    background: @secondary;
     background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,@secondary), color-stop(100%,@secondary-gradient-alt));
     background: -webkit-linear-gradient(top,  31%,@secondary-gradient-alt 100%);
     background: -moz-linear-gradient(top,  @secondary 31%, @secondary-gradient-alt 100%);
@@ -170,7 +164,7 @@ ul.nav.navbar-nav {
 li.active a,ul.nav a {
     font-size: 10pt !important;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000000 !important;
+    color: #fff !important;
 }
 .caret {
     border-bottom-color:@base-gradient-alt !important;
@@ -192,6 +186,15 @@ li.active a:hover,li.dropdown a.dropdown-toggle:hover,li.dropdown a.dropdown-tog
     height: 500px;
     width: 500px;
 }
+
+div.mbHeaderImage {
+    position: relative;
+    float: left;
+    padding-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 .headerLogo-small {
     display: block;
     -moz-box-sizing: border-box;
