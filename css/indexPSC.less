@@ -1,28 +1,30 @@
-// +++++ Set initial styling variables +++++ // 
+// Set initial styling variables
 
 // Primary 
 @base: #fff;
-@secondary: #b5aa9e;
-@base-gradient-alt: #fff;
-@secondary-gradient-alt: #b5aa9e;
+@secondary: #18355F;
+@base-gradient-alt: #aaa;
+@secondary-gradient-alt: #1d4073;
 
 // Panels
-@panel-header: #cc092f;
-@panel-header-gradient-alt: #cc092f;
+@panel-header: #005596;
+@panel-header-gradient-alt: #0063b0;
+
+// Border
+@border-color: #F89921;
 
 // Hover
-@secondary-hover: #a49688;
+@secondary-hover: #132a4b;
 
 // Images
-@headerLogo-small: "../img/unmc_headerLogo-small.png";
-@headerLogo-small-width: 74px;
-@headerLogo-small-height: 31px;
+@headerLogo-small: "../img/psc_headerLogo-small.png";
+@headerLogo-small-width: 160px;
+@headerLogo-small-height: 30px;
 
-@headerLogo-big: "../img/unmc_headerLogo-big.png";
-@headerLogo-big-width: 345px;
-@headerLogo-big-height: 110px;
+@headerLogo-big: "../img/psc_headerLogo-big.png";
+@headerLogo-big-width: 630px;
+@headerLogo-big-height: 65px;
 
-// +++++ Body +++++ //
 html, body, #map-canvas {
     margin: 0;
     padding: 0;
@@ -86,7 +88,7 @@ h3.panel-title {
     }
 }
 .panel-brand {
-    border-color: @base-gradient-alt;
+    border-color: #000;
     border-width: 1px;
 }
 .navbar-collapse {
@@ -132,9 +134,9 @@ ul.nav.navbar-nav {
 .navbar-fixed-top {
     text-shadow: 0 -1px 0 rgba(0,0,0,.15) !important;
     background-color: @secondary-gradient-alt !important;
-    border-color: #000 !important;
+    border-color: @border-color !important;
     box-shadow: 0 1px 0 rgba(255,255,255,.1) !important;
-    color:#000;
+    color:#fff;
     background: @secondary;
     background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,@secondary), color-stop(100%,@secondary-gradient-alt));
     background: -webkit-linear-gradient(top,  31%,@secondary-gradient-alt 100%);
@@ -148,7 +150,7 @@ ul.nav.navbar-nav {
 .panel-heading {
     text-shadow: 0 -1px 0 rgba(0,0,0,.15) !important;
     background-color: @secondary-gradient-alt !important;
-    border-color: #000 !important;
+    border-color: @border-color !important;
     box-shadow: 0 1px 0 rgba(255,255,255,.1) !important;
     color:@base;
     background: #fff;
@@ -164,11 +166,11 @@ ul.nav.navbar-nav {
 li.active a,ul.nav a {
     font-size: 10pt !important;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000 !important;
+    color: #fff !important;
 }
 .caret {
-    border-bottom-color:@base-gradient-alt !important;
-    border-top-color:@base-gradient-alt !important;
+    border-bottom-color:@border-color !important;
+    border-top-color:@border-color !important;
 }
 div.infoleft {
     border-right: #fff;
@@ -179,7 +181,7 @@ li.active a:hover,li.dropdown a.dropdown-toggle:hover,li.dropdown a.dropdown-tog
 .btn-outline-inverse {
     color: @base !important;
     background-color: transparent;
-    border-color: #cdbfe3;
+    border-color: @border-color;
     margin-top:-3px;
 }
 #map-canvas {

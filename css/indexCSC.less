@@ -2,25 +2,25 @@
 
 // Primary 
 @base: #fff;
-@secondary: #b5aa9e;
+@secondary: #660033;
 @base-gradient-alt: #fff;
-@secondary-gradient-alt: #b5aa9e;
+@secondary-gradient-alt: #660033;
 
 // Panels
-@panel-header: #cc092f;
-@panel-header-gradient-alt: #cc092f;
+@panel-header: #660033;
+@panel-header-gradient-alt: #4d0026;
 
 // Hover
-@secondary-hover: #a49688;
+@secondary-hover: #520029;
 
 // Images
-@headerLogo-small: "../img/unmc_headerLogo-small.png";
-@headerLogo-small-width: 74px;
-@headerLogo-small-height: 31px;
+@headerLogo-small: "../img/csc_headerLogo-small.png";
+@headerLogo-small-width: 160px;
+@headerLogo-small-height: 30px;
 
-@headerLogo-big: "../img/unmc_headerLogo-big.png";
-@headerLogo-big-width: 345px;
-@headerLogo-big-height: 110px;
+@headerLogo-big: "../img/csc_headerLogo-big.png";
+@headerLogo-big-width: 160px;
+@headerLogo-big-height: 30px;
 
 // +++++ Body +++++ //
 html, body, #map-canvas {
@@ -80,7 +80,7 @@ header {
 }
 h3.panel-title {
     a {
-        color: @base;
+        color: #fff;
         font-size: 14pt;
         font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     }
@@ -134,7 +134,7 @@ ul.nav.navbar-nav {
     background-color: @secondary-gradient-alt !important;
     border-color: #000 !important;
     box-shadow: 0 1px 0 rgba(255,255,255,.1) !important;
-    color:#000;
+    color:@base;
     background: @secondary;
     background: -webkit-gradient(linear, left top, left bottombottom, color-stop(31%,@secondary), color-stop(100%,@secondary-gradient-alt));
     background: -webkit-linear-gradient(top,  31%,@secondary-gradient-alt 100%);
@@ -164,7 +164,7 @@ ul.nav.navbar-nav {
 li.active a,ul.nav a {
     font-size: 10pt !important;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000 !important;
+    color: #fff !important;
 }
 .caret {
     border-bottom-color:@base-gradient-alt !important;
